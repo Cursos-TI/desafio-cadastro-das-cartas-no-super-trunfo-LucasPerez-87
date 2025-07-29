@@ -1,34 +1,38 @@
 #include <stdio.h>
 
 int main() {
-    // Declaração das variáveis da carta 1
+    
+    printf("Desafio: Nível Novato - Jogos Super Trunfo \n");
+    printf("\n");
+    
+    // Carta 1 - Super Trunfo
     char estado1;
     char codigo1[4];
     char cidade1[50];
     int populacao1;
     float area1;
     float pib1;
-    int pt1;
+    int pt1; //pt - Pontos Turísticos
 
-    // Declaração das variáveis da carta 2
+    // Carta 2 - Super Tunfo
     char estado2;
     char codigo2[4];
     char cidade2[50];
     int populacao2;
     float area2;
     float pib2;
-    int pt2;
+    int pt2; //pt - Pontos Turísticos
 
-    // Entrada de dados da carta 1
-    printf("Cadastro da Carta 1:\n");
+    // Entrada 1
+    printf("Carta 1:\n");
     printf("Digite o Estado (letra de A a H): ");
-    scanf(" %c", &estado1); // espaço antes do %c limpa o buffer
+    scanf(" %c", &estado1);
 
     printf("Digite o Código da Carta (ex: A01): ");
     scanf("%s", codigo1);
 
     printf("Digite o Nome da Cidade: ");
-    scanf(" %[^\n]", cidade1); // lê até a quebra de linha (inclui espaços)
+    scanf(" %[^\n]", cidade1); 
 
     printf("Digite a População: ");
     scanf("%d", &populacao1);
@@ -44,8 +48,8 @@ int main() {
 
     printf("\n");
 
-    // Entrada de dados da carta 2
-    printf("Cadastro da Carta 2:\n");
+    // Entrada 2
+    printf("Carta 2:\n");
     printf("Digite o Estado (letra de A a H): ");
     scanf(" %c", &estado2);
 
@@ -69,7 +73,11 @@ int main() {
 
     printf("\n");
 
-    // Impressão dos dados da carta 1
+    // Impressão título desafio
+    printf("Desafio: Nível Novato - Jogos Super Trunfo \n");
+    printf("\n");
+
+    // Impressão carta 1
     printf("Carta 1:\n");
     printf("Estado: %c\n", estado1);
     printf("Código: %s\n", codigo1);
@@ -81,7 +89,7 @@ int main() {
 
     printf("\n");
 
-    // Impressão dos dados da carta 2
+    // Impressão carta 2
     printf("Carta 2:\n");
     printf("Estado: %c\n", estado2);
     printf("Código: %s\n", codigo2);
@@ -90,6 +98,8 @@ int main() {
     printf("Área: %.2f km²\n", area2);
     printf("PIB: %.2f bilhões de reais\n", pib2);
     printf("Número de Pontos Turísticos: %d\n", pt2);
+
+    printf("\n");
 
     return 0;
 }
